@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://drflakitg22ba"]
 
 [ext_resource type="Texture2D" uid="uid://dwx5phiib25o6" path="res://craftpix-net-882062-free-winter-backgrounds-pixel-art/winter 8/hd.png" id="1_rd42q"]
-[ext_resource type="Texture2D" uid="uid://etl08p8nxfvu" path="res://craftpix-net-882062-free-winter-backgrounds-pixel-art/speaker (1).svg" id="2_tlx4e"]
+[ext_resource type="Texture2D" uid="uid://etl08p8nxfvu" path="res://speaker (1).svg" id="2_nhllp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_egyg5"]
 bg_color = Color(0.745098, 0.552941, 0.435294, 1)
@@ -75,5 +75,5 @@ offset_top = 8.0
 offset_right = 56.0
 offset_bottom = 56.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_egyg5")
-icon = ExtResource("2_tlx4e")
+icon = ExtResource("2_nhllp")
 expand_icon = true
