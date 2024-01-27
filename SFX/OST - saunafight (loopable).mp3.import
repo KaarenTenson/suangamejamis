@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1ar6m82i0kkm"
+path="res://.godot/imported/OST - saunafight (loopable).mp3-ad4d3aa332c50a44b0565e89d775d847.mp3str"
+
+[deps]
+
+source_file="res://SFX/OST - saunafight (loopable).mp3"
+dest_files=["res://.godot/imported/OST - saunafight (loopable).mp3-ad4d3aa332c50a44b0565e89d775d847.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
