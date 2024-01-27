@@ -3,6 +3,7 @@ extends Node2D
 @onready var heal_cooldown = $heal_cooldown
 @onready var attack_cooldown = $attack_cooldown
 @onready var duck_cooldown = $duck_cooldown
+@onready var animated_sprite_2d = $AnimatedSprite2D
 
 @onready var healthbars = %Healthbars
 
@@ -33,20 +34,24 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("heal") && heal_cooldown.is_stopped():
 		heal()
+		animated_sprite_2d.play("drink")
 		heal_cooldown.start()
 		
 		
 	if Input.is_action_pressed("duck") && duck_cooldown.is_stopped() && stamina > 2:
 		stamina -= delta*20
-		
+		animated_sprite_2d.play("duck")
+			
 	if Input.is_action_just_released("duck") && duck_cooldown.is_stopped():
 		duck_cooldown.start()
+		animated_sprite_2d.play("touse")
 		
 	if stamina < 100:
 		stamina += delta*5
 	
 	if Input.is_action_just_pressed("attack") && attack_cooldown.is_stopped() && stamina > 5:
 		attack_cooldown.start()
+		animated_sprite_2d.play("thrown")
 		attack()
 	
 func attack():

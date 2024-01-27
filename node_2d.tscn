@@ -1,13 +1,102 @@
-[gd_scene load_steps=16 format=3 uid="uid://ddc68j6efchi5"]
+[gd_scene load_steps=31 format=3 uid="uid://ddc68j6efchi5"]
 
 [ext_resource type="PackedScene" uid="uid://bqbkxgpi2sn1c" path="res://healthbars.tscn" id="1_8oo7h"]
 [ext_resource type="Texture2D" uid="uid://ctuigpqim3p70" path="res://assets/sauna/saunalantern.png" id="1_rljmp"]
-[ext_resource type="Texture2D" uid="uid://dvs2s2q3nfev4" path="res://assets/player/player_sitting.png" id="2_dbdtq"]
 [ext_resource type="Script" path="res://player.gd" id="2_q0cvr"]
 [ext_resource type="Script" path="res://jyrki.gd" id="3_4js3r"]
+[ext_resource type="Texture2D" uid="uid://dqbl1la7fykwv" path="res://assets/sauna/animpeategelane_0001.png" id="3_nfh1a"]
+[ext_resource type="Texture2D" uid="uid://dx38t04cvy5mi" path="res://assets/sauna/animpeategelane_0002.png" id="4_0na7y"]
 [ext_resource type="AudioStream" uid="uid://dw5oq6r2do5xk" path="res://assets/SFX/goodleil.mp3" id="4_tf70q"]
+[ext_resource type="Texture2D" uid="uid://dsmu6mj4iwbry" path="res://assets/sauna/animpeategelane_0003.png" id="5_grjla"]
+[ext_resource type="Texture2D" uid="uid://75y1xwgpvsjf" path="res://assets/sauna/animpeategelane_0004.png" id="6_tydjt"]
+[ext_resource type="Texture2D" uid="uid://citagvusabnt1" path="res://assets/sauna/animpeategelane_0005.png" id="7_m3154"]
+[ext_resource type="Texture2D" uid="uid://cqpcc4jn7778g" path="res://assets/sauna/animpeategelane_0006.png" id="8_i8fp4"]
+[ext_resource type="Texture2D" uid="uid://be47h4sta56qe" path="res://assets/sauna/animpeategelane_0007.png" id="9_m8bu8"]
+[ext_resource type="Texture2D" uid="uid://n47k0lxfkc4o" path="res://assets/sauna/animpeategelaneduck_0001.png" id="10_hevy7"]
+[ext_resource type="Texture2D" uid="uid://cv4bf6g0xlplt" path="res://assets/sauna/animpeategelaneduck_0002.png" id="11_bavxg"]
 [ext_resource type="Script" path="res://jyrki/jyrki_attack.gd" id="11_e7qec"]
+[ext_resource type="Texture2D" uid="uid://u6eg20wpvo0c" path="res://assets/sauna/animpeategelaneviskamine_0001.png" id="13_h08xo"]
 [ext_resource type="AudioStream" uid="uid://bq10umwdkx5fu" path="res://assets/SFX/OST - saunafight (loopable).mp3" id="13_pb32a"]
+[ext_resource type="Texture2D" uid="uid://caqqfcrtaj6n0" path="res://assets/sauna/animpeategelaneviskamine_0002.png" id="14_sxo67"]
+[ext_resource type="Texture2D" uid="uid://8vw5oqlaijko" path="res://assets/sauna/animpeategelaneviskamine_0003.png" id="15_ves2p"]
+[ext_resource type="Texture2D" uid="uid://dnnmdqgq6dgtv" path="res://assets/sauna/animpeategelaneviskamine_0004.png" id="16_opi1j"]
+[ext_resource type="Texture2D" uid="uid://cubfywwajmvli" path="res://assets/sauna/animpeategelaneviskamine_0005.png" id="17_u7yjr"]
+[ext_resource type="Texture2D" uid="uid://bey06mk4wp47u" path="res://assets/sauna/animpeategelaneviskamine_0006.png" id="18_ix22d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lle1d"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nfh1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0na7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_grjla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tydjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_m3154")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_i8fp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_m8bu8")
+}],
+"loop": false,
+"name": &"drink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_bavxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bavxg")
+}],
+"loop": true,
+"name": &"duck",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_h08xo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_sxo67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ves2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_opi1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_opi1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_u7yjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ix22d")
+}],
+"loop": false,
+"name": &"thrown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_hevy7")
+}],
+"loop": true,
+"name": &"touse",
+"speed": 5.0
+}]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_04iom"]
 load_path = "res://.godot/imported/Jyrkki_placeholder_attack_0003.png-556844808e6372722e119064bf98222d.ctex"
@@ -89,10 +178,12 @@ texture = ExtResource("1_rljmp")
 position = Vector2(278, 523)
 script = ExtResource("2_q0cvr")
 
-[node name="player_sprite" type="Sprite2D" parent="player"]
-position = Vector2(21, -20)
-scale = Vector2(2, 2)
-texture = ExtResource("2_dbdtq")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
+texture_filter = 1
+position = Vector2(335.891, -138.188)
+scale = Vector2(3.72887, 3.0145)
+sprite_frames = SubResource("SpriteFrames_lle1d")
+animation = &"touse"
 
 [node name="heal_cooldown" type="Timer" parent="player"]
 wait_time = 2.0
