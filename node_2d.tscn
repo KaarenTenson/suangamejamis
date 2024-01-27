@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://ddc68j6efchi5"]
+[gd_scene load_steps=16 format=3 uid="uid://ddc68j6efchi5"]
 
 [ext_resource type="PackedScene" uid="uid://clj0wexf25xj5" path="res://healthbars.tscn" id="1_8oo7h"]
 [ext_resource type="Texture2D" uid="uid://ctuigpqim3p70" path="res://assets/sauna/saunalantern.png" id="1_rljmp"]
 [ext_resource type="Texture2D" uid="uid://dvs2s2q3nfev4" path="res://assets/player/player_sitting.png" id="2_dbdtq"]
 [ext_resource type="Script" path="res://player.gd" id="2_q0cvr"]
 [ext_resource type="Script" path="res://jyrki.gd" id="3_4js3r"]
+[ext_resource type="AudioStream" uid="uid://dw5oq6r2do5xk" path="res://assets/SFX/goodleil.mp3" id="4_tf70q"]
 [ext_resource type="Script" path="res://jyrki/jyrki_attack.gd" id="11_e7qec"]
 [ext_resource type="AudioStream" uid="uid://bq10umwdkx5fu" path="res://assets/SFX/OST - saunafight (loopable).mp3" id="13_pb32a"]
 
@@ -103,6 +104,10 @@ one_shot = true
 [node name="duck_cooldown" type="Timer" parent="player"]
 one_shot = true
 
+[node name="goodleil" type="AudioStreamPlayer" parent="player"]
+stream = ExtResource("4_tf70q")
+volume_db = -2.0
+
 [node name="jyrki" type="Node2D" parent="."]
 script = ExtResource("3_4js3r")
 
@@ -130,6 +135,8 @@ unique_name_in_owner = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_pb32a")
+volume_db = -2.0
+autoplay = true
 
 [connection signal="attacking" from="player" to="jyrki" method="_on_player_attacking"]
 [connection signal="animation_finished" from="jyrki/jyrki_sprite" to="jyrki" method="_on_jyrki_sprite_animation_finished"]

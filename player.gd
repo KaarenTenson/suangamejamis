@@ -6,6 +6,9 @@ extends Node2D
 
 @onready var healthbars = %Healthbars
 
+@onready var goodleil = $goodleil
+
+
 const HP_MAX = 100.0
 const STAMINA_MAX = 100.0
 const DRUNK_MIN = 0
@@ -50,6 +53,7 @@ func attack():
 	if stamina > 0:
 		emit_signal("attacking")
 		stamina -= 20.0
+		goodleil.play()
 	
 	
 func game_over():
