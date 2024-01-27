@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcx2ryspnr27o"
-path="res://.godot/imported/Jyrkki_placeholder_attack_0002.png-08c731bcd4f49b3644027b7d58ff884e.ctex"
+uid="uid://bxjbno4hpt2ty"
+path="res://.godot/imported/Jyrkki_placeholder_attack_0001.png-62ff7684eaa49e8104a9be4533ff167b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/jyrkki/Jyrkki_placeholder_attack_0002.png"
-dest_files=["res://.godot/imported/Jyrkki_placeholder_attack_0002.png-08c731bcd4f49b3644027b7d58ff884e.ctex"]
+source_file="res://assets/jyrkki/jyrki_attack/Jyrkki_placeholder_attack_0001.png"
+dest_files=["res://.godot/imported/Jyrkki_placeholder_attack_0001.png-62ff7684eaa49e8104a9be4533ff167b.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxjbno4hpt2ty"
-path="res://.godot/imported/Jyrkki_placeholder_attack_0001.png-75bd6816d1c0d386165c458680a6f45e.ctex"
+uid="uid://cg223u470msrh"
+path="res://.godot/imported/Jyrkki_placeholder_telegraph_0001.png-c39d5daa45fedfb9a4a4a2c06b0ec8c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/jyrkki/Jyrkki_placeholder_attack_0001.png"
-dest_files=["res://.godot/imported/Jyrkki_placeholder_attack_0001.png-75bd6816d1c0d386165c458680a6f45e.ctex"]
+source_file="res://assets/jyrkki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0001.png"
+dest_files=["res://.godot/imported/Jyrkki_placeholder_telegraph_0001.png-c39d5daa45fedfb9a4a4a2c06b0ec8c5.ctex"]
 
 [params]
 
