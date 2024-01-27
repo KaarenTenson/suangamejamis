@@ -57,7 +57,7 @@ jyrki (JyrkiNeutral): ...
 - You look cute, Jyrki.
 	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 	jyrki (JyrkiFlirty): Ohh.. Kiitos my Estonian friend. \:)
-	jyrki (JyrkiFlirty): What is your favorite type of Finnish man? 
+	jyrki (JyrkiFlirty): What is your favorite type of Finnish man?
 	- The ones that like sauna.
 		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 		jyrki (JyrkiFlirty): happy Oh.. Very good.
@@ -74,7 +74,7 @@ jyrki (JyrkiNeutral): ...
 	- Yeah, you should work out more.
 		[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
 		jyrki: Typera virolainen, you do not see Finnish figure?
-		jyrki (JyrkiAngry): You are pathetic. I hope this is last time we see. 
+		jyrki (JyrkiAngry): You are pathetic. I hope this is last time we see.
 	- Sorry, I didn’t mean it like that. You look great Jyrki! :)
 		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 		jyrki (JyrkiHappy): Oh, OK. Sorry for getting wrong idea.
@@ -84,7 +84,7 @@ jyrki (JyrkiNeutral): ...
 			jyrki (JyrkiFlirty): looks at you *blushes and starts fidgeting*
 		- Yeah right.
 			[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
-			jyrki (JyrkiHappy): I mean it. >o< 
+			jyrki (JyrkiHappy): I mean it. >o<
 			jyrki (JyrkiNeutral): Sorry, let us move on.
 [sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
 jyrki (JyrkiNeutral): Enough games… Now to determine if you are worthy of my sauna.
@@ -93,6 +93,6 @@ jyrki (JyrkiNeutral): What is your favorite sauna beer?
 - A.Le Coq Premium
 - Tanker
 jyrki (JyrkiAngry): Perkele you little stupid Estonian.
-jyrki (JyrkiAngry): The only right sauna beer is Lapin Kulta. 
+jyrki (JyrkiAngry): The only right sauna beer is Lapin Kulta.
 jyrki (JyrkiDestroy1): You have unleashed my rage tyhma virolainen!!
 set {Affection_meter} -= 10
