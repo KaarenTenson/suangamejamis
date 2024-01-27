@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://clj0wexf25xj5"]
+[gd_scene load_steps=18 format=3 uid="uid://bqbkxgpi2sn1c"]
 
+[ext_resource type="Script" path="res://healthbars.gd" id="1_7j1th"]
 [ext_resource type="Texture2D" uid="uid://k6mu061ntby2" path="res://toutorial.png" id="1_hnfgc"]
 [ext_resource type="Texture2D" uid="uid://bbr3qs25x0tru" path="res://nuppud.png" id="2_m50r4"]
 
@@ -108,6 +109,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7j1th")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -198,7 +200,7 @@ offset_right = 992.0
 offset_bottom = 320.0
 texture = ExtResource("1_hnfgc")
 
-[node name="elud" type="ProgressBar" parent="jürki"]
+[node name="jurkielud" type="ProgressBar" parent="jürki"]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 5
@@ -215,7 +217,7 @@ value = 100.0
 rounded = true
 show_percentage = false
 
-[node name="Label" type="Label" parent="jürki/elud"]
+[node name="Label" type="Label" parent="jürki/jurkielud"]
 layout_mode = 0
 offset_left = 32.0
 offset_right = 72.0
@@ -262,7 +264,7 @@ offset_right = 144.0
 offset_bottom = 58.0
 text = "THROW (R) "
 
-[node name="elud" type="ProgressBar" parent="viska"]
+[node name="cooldownviska" type="ProgressBar" parent="viska"]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 5
@@ -298,7 +300,7 @@ offset_right = 144.0
 offset_bottom = 58.0
 text = "DRINK (E) "
 
-[node name="elud" type="ProgressBar" parent="joo"]
+[node name="cooldownjoo" type="ProgressBar" parent="joo"]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 5
@@ -334,7 +336,7 @@ offset_right = 144.0
 offset_bottom = 58.0
 text = "DUCK (SPACE) "
 
-[node name="elud" type="ProgressBar" parent="PIKALI!"]
+[node name="cooldownpikali" type="ProgressBar" parent="PIKALI!"]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 5

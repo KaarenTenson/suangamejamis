@@ -1,16 +1,16 @@
 [gd_scene load_steps=14 format=3 uid="uid://ddc68j6efchi5"]
 
-[ext_resource type="PackedScene" uid="uid://clj0wexf25xj5" path="res://healthbars.tscn" id="1_8oo7h"]
+[ext_resource type="PackedScene" uid="uid://bqbkxgpi2sn1c" path="res://healthbars.tscn" id="1_8oo7h"]
 [ext_resource type="Texture2D" uid="uid://ctuigpqim3p70" path="res://assets/sauna/saunalantern.png" id="1_rljmp"]
 [ext_resource type="Texture2D" uid="uid://dvs2s2q3nfev4" path="res://assets/player/player_sitting.png" id="2_dbdtq"]
 [ext_resource type="Script" path="res://player.gd" id="2_q0cvr"]
-[ext_resource type="Texture2D" uid="uid://bxjbno4hpt2ty" path="res://assets/jyrkki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0003.png" id="3_0wncw"]
+[ext_resource type="Texture2D" uid="uid://bxjbno4hpt2ty" path="res://assets/jyrki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0003.png" id="3_0wncw"]
 [ext_resource type="Script" path="res://jyrki.gd" id="3_4js3r"]
-[ext_resource type="Texture2D" uid="uid://cgc1abnhkv34v" path="res://assets/jyrkki/jyrki_attack/Jyrkki_placeholder_attack_0003.png" id="5_kn85m"]
-[ext_resource type="Texture2D" uid="uid://ce0fwk611tyy6" path="res://assets/jyrkki/jyrki_attack/Jyrkki_placeholder_attack_0004.png" id="6_pe6hk"]
-[ext_resource type="Texture2D" uid="uid://bqi4ncq8xxxhc" path="res://assets/jyrkki/jyrki_attack/Jyrkki_placeholder_attack_0005.png" id="7_1fihp"]
-[ext_resource type="Texture2D" uid="uid://cg223u470msrh" path="res://assets/jyrkki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0001.png" id="9_sbrsa"]
-[ext_resource type="Texture2D" uid="uid://dyv01ylwtapwn" path="res://assets/jyrkki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0002.png" id="10_aqk7j"]
+[ext_resource type="Texture2D" uid="uid://cgc1abnhkv34v" path="res://assets/jyrki/jyrki_attack/Jyrkki_placeholder_attack_0003.png" id="5_kn85m"]
+[ext_resource type="Texture2D" uid="uid://ce0fwk611tyy6" path="res://assets/jyrki/jyrki_attack/Jyrkki_placeholder_attack_0004.png" id="6_pe6hk"]
+[ext_resource type="Texture2D" uid="uid://bqi4ncq8xxxhc" path="res://assets/jyrki/jyrki_attack/Jyrkki_placeholder_attack_0005.png" id="7_1fihp"]
+[ext_resource type="Texture2D" uid="uid://cg223u470msrh" path="res://assets/jyrki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0001.png" id="9_sbrsa"]
+[ext_resource type="Texture2D" uid="uid://dyv01ylwtapwn" path="res://assets/jyrki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0002.png" id="10_aqk7j"]
 [ext_resource type="Script" path="res://jyrki/jyrki_attack.gd" id="11_e7qec"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ntdi8"]
@@ -108,10 +108,12 @@ one_shot = true
 one_shot = true
 
 [node name="Healthbars" parent="." instance=ExtResource("1_8oo7h")]
+unique_name_in_owner = true
 
-[connection signal="attacking" from="player" to="jyrki" method="_on_player_attacking"]
 [connection signal="animation_finished" from="jyrki/jyrki_sprite" to="jyrki" method="_on_jyrki_sprite_animation_finished"]
 [connection signal="attacking" from="jyrki/jyrki_attack" to="player" method="_on_jyrki_attack_attacking"]
 [connection signal="timeout" from="jyrki/jyrki_attack/attack_timer" to="jyrki/jyrki_attack" method="_on_attack_timer_timeout"]
 [connection signal="timeout" from="jyrki/jyrki_attack/attack_cooldown" to="jyrki/jyrki_attack" method="_on_attack_cooldown_timeout"]
 [connection signal="timeout" from="jyrki/jyrki_attack/telegraph_timer" to="jyrki/jyrki_attack" method="_on_telegraph_timer_timeout"]
+
+[editable path="Healthbars"]
