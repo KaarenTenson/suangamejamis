@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://ddc68j6efchi5"]
 
-[ext_resource type="PackedScene" uid="uid://clj0wexf25xj5" path="res://healthbars.tscn" id="1_8oo7h"]
+[ext_resource type="PackedScene" uid="uid://bqbkxgpi2sn1c" path="res://healthbars.tscn" id="1_8oo7h"]
 [ext_resource type="Texture2D" uid="uid://ctuigpqim3p70" path="res://assets/sauna/saunalantern.png" id="1_rljmp"]
 [ext_resource type="Texture2D" uid="uid://dvs2s2q3nfev4" path="res://assets/player/player_sitting.png" id="2_dbdtq"]
 [ext_resource type="Script" path="res://player.gd" id="2_q0cvr"]
