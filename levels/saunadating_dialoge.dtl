@@ -1,0 +1,98 @@
+[background arg="res://assets/saunadate/sauna_dating_background.png" fade="0.0"]
+join jyrki (JyrkiNeutral) 4
+jyrki (JyrkiNeutral): Good sauna boy! How do you like my sauna?
+- A sauna with you is always good *smirks at Jyrki*
+	update jyrki (JyrkiFlirty)
+	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+	jyrki (JyrkiFlirty): *blushes* I am glad you think so.
+	jyrki (JyrkiFlirty): I like sauna with you too. \:)
+- This was the best sauna experience!
+	update jyrki (JyrkiHappy)
+	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+	jyrki (JyrkiHappy): Yes, my sauna is best Finnish design.
+	jyrki (JyrkiHappy): You can always sauna with me friend.
+- I’ve definitely been in better saunas.
+	update jyrki (JyrkiAngry)
+	[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
+	jyrki (JyrkiAngry): Stupid Estonian. You not understand sauna culture.
+	jyrki (JyrkiAngry): Finnish sauna is BEST sauna in the world!
+	jyrki (JyrkiAngry): Tyhma, tyhma virolainen.
+jyrki (JyrkiNeutral): ...
+- How is it like living in Ailionjärvi?
+	[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
+	jyrki (JyrkiSad): Ailionjärvi gets boring around this time.
+	jyrki (JyrkiNeutral): All people here go to church, but I don’t like it.
+	[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
+	jyrki (JyrkiSad): I go to work and drink beer, and wait for sauna day.
+- Do you sauna often?
+	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+	jyrki (JyrkiHappy): Yes, it is one thing I look forward to during long week.
+	jyrki (JyrkiHappy): I am happy I get to share sauna with someone.
+	- It really does get hotter with more people in the sauna. *winky face*
+		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+		jyrki (JyrkiFlirty): *blushes* Ho-ho-ho, that is right.
+	- es, it is very fun.
+		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+		jyrki (JyrkiHappy): I am glad you think so friend.
+- What do you do for work?
+	jyrki (JyrkiNeutral): I work with papers a lot.
+	jyrki (JyrkiNeutral): Contracts, mostly for people relocation.
+	jyrki (JyrkiNeutral): It requires a degree in administration and a lot of knowledge about immigration policies
+	jyrki (JyrkiNeutral): The primary purpose of administrative procedure is to protect the rights of individuals against unlawful actions performed in the course of the exercise of executive authority.
+	jyrki (JyrkiNeutral): An administrative matter (hereinafter, also ‘the matter’) must be dealt with justly, fairly, within reasonable time and with the least possible cost.
+	jyrki (JyrkiNeutral): Of course all proceedings before these administrative matters are public unless the law provides otherwise.
+	[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
+	jyrki (JyrkiSad): Oh.. Sorry. I did not mean to bore you.
+jyrki (JyrkiNeutral): ...
+- Can we do sauna again sometime?
+	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+	jyrki (JyrkiHappy): happy Of course friend! My sauna is always open on sauna day.
+	jyrki (JyrkiHappy): If you come, then invite friends too.
+	- Of course!!
+		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+		jyrki (JyrkiHappy): Jyrki looks at you with content eyes*
+	- I’ll consider it.
+		[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
+		jyrki (JyrkiSad): sad Ok.. That is okay too.
+- You look cute, Jyrki.
+	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+	jyrki (JyrkiFlirty): Ohh.. Kiitos my Estonian friend. \:)
+	jyrki (JyrkiFlirty): What is your favorite type of Finnish man? 
+	- The ones that like sauna.
+		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+		jyrki (JyrkiFlirty): happy Oh.. Very good.
+	- The ones with blonde hair.
+		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+		jyrki (JyrkiFlirty): blushes Hi-hi. You flatter me, virolainen.
+	- The ones who are not addicted to alcohol.
+		[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
+		jyrki (JyrkiSad): Oh.. Ok. That is reasonable taste.
+- Do you work out, Jyrki?
+	[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
+	jyrki (JyrkiAngry): You don’t see I do bicep curls and bicycle crunches??
+	jyrki (JyrkiAngry): Do I really look that out of shape?!
+	- Yeah, you should work out more.
+		[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
+		jyrki: Typera virolainen, you do not see Finnish figure?
+		jyrki (JyrkiAngry): You are pathetic. I hope this is last time we see. 
+	- Sorry, I didn’t mean it like that. You look great Jyrki! :)
+		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+		jyrki (JyrkiHappy): Oh, OK. Sorry for getting wrong idea.
+		jyrki (JyrkiHappy): You look great too.
+		- Thank you Jyrki.
+			[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+			jyrki (JyrkiFlirty): looks at you *blushes and starts fidgeting*
+		- Yeah right.
+			[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+			jyrki (JyrkiHappy): I mean it. >o< 
+			jyrki (JyrkiNeutral): Sorry, let us move on.
+[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
+jyrki (JyrkiNeutral): Enough games… Now to determine if you are worthy of my sauna.
+jyrki (JyrkiNeutral): What is your favorite sauna beer?
+- Saku Original
+- A.Le Coq Premium
+- Tanker
+jyrki (JyrkiAngry): Perkele you little stupid Estonian.
+jyrki (JyrkiAngry): The only right sauna beer is Lapin Kulta. 
+jyrki (JyrkiDestroy1): You have unleashed my rage tyhma virolainen!!
+set {Affection_meter} -= 10

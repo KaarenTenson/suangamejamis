@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjpqs2agxts3m"]
+
+[ext_resource type="Script" path="res://levels/sauna_dating.gd" id="1_6qnvt"]
+
+[node name="Saunadate" type="Node2D"]
+script = ExtResource("1_6qnvt")
