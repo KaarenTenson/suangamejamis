@@ -25,7 +25,7 @@ func _process(delta):
 	#Player cooldowns
 	healthbars.get_children()[3].get_children()[1].set_value_no_signal((heal_cooldown.get_time_left()/2)*100)
 	healthbars.get_children()[2].get_children()[1].set_value_no_signal(attack_cooldown.get_time_left()*100)
-	healthbars.get_children()[4].get_children()[1].set_value_no_signal(duck_cooldown.get_time_left()*100)
+	healthbars.get_children()[4].get_children()[1].set_value_no_signal((duck_cooldown.get_time_left()/1.25)*100)
 	
 	
 	if Input.is_action_just_pressed("heal") && heal_cooldown.is_stopped():
@@ -33,16 +33,16 @@ func _process(delta):
 		heal_cooldown.start()
 		
 		
-	if Input.is_action_pressed("duck") && stamina > 0:
+	if Input.is_action_pressed("duck") && duck_cooldown.is_stopped() && stamina > 2:
 		stamina -= delta*20
 		
-	if Input.is_action_just_released("duck"):
+	if Input.is_action_just_released("duck") && duck_cooldown.is_stopped():
 		duck_cooldown.start()
 		
 	if stamina < 100:
 		stamina += delta*5
 	
-	if Input.is_action_just_pressed("attack") && attack_cooldown.is_stopped():
+	if Input.is_action_just_pressed("attack") && attack_cooldown.is_stopped() && stamina > 5:
 		attack_cooldown.start()
 		attack()
 	
@@ -62,7 +62,7 @@ func take_damage():
 		
 		
 func _on_jyrki_attack_attacking():
-	if Input.is_action_pressed("duck") && stamina > 0:
+	if Input.is_action_pressed("duck") && stamina > 0 && duck_cooldown.is_stopped():
 		print("dodged")
 	else:
 		print("hit")

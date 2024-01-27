@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7uc4p05p01yw"
+path="res://.godot/imported/DATING_Jyrki_slam (loopable).mp3-6e7967c97a0c36d9c83be1f64b0b189c.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/DATING_Jyrki_slam (loopable).mp3"
+dest_files=["res://.godot/imported/DATING_Jyrki_slam (loopable).mp3-6e7967c97a0c36d9c83be1f64b0b189c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
