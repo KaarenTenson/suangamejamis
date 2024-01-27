@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var heal_cooldown = $heal_cooldown	
+@onready var healthbars = %Healthbars
 
 const HP_MAX = 100.0
 const STAMINA_MAX = 100.0
@@ -11,11 +12,11 @@ var stamina = STAMINA_MAX
 var drunk = DRUNK_MIN
 
 signal attacking
-
 func _process(delta):
 	if Input.is_action_just_pressed("heal") && heal_cooldown.is_stopped:
 		heal()
 		heal_cooldown.start()
+		
 		
 	if Input.is_action_pressed("duck") && stamina > 0:
 		stamina -= delta*25
@@ -26,6 +27,7 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("attack"):
 		attack()
+	healthbars.get_children()[0].get_children()[1].set_value_no_signal(hp)
 	
 func attack():
 	if stamina > 0:
