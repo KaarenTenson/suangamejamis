@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bqbkxgpi2sn1c"]
+[gd_scene load_steps=17 format=3 uid="uid://bqbkxgpi2sn1c"]
 
 [ext_resource type="Texture2D" uid="uid://k6mu061ntby2" path="res://toutorial.png" id="1_hnfgc"]
+[ext_resource type="Texture2D" uid="uid://bbr3qs25x0tru" path="res://nuppud.png" id="2_m50r4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mseov"]
 bg_color = Color(0.627451, 0.615686, 0.32549, 1)
@@ -53,6 +54,48 @@ corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dod7u"]
 bg_color = Color(0.647059, 0.160784, 0.0941176, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_umxqw"]
+bg_color = Color(0.756863, 0.619608, 0.0588235, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjx2t"]
+bg_color = Color(0.823529, 0.521569, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gpf0i"]
+bg_color = Color(0.345098, 0.729412, 0.435294, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uett5"]
+bg_color = Color(0.572549, 0.643137, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ivbey"]
+bg_color = Color(0.164706, 0.72549, 0.662745, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8eb8i"]
+bg_color = Color(0.658824, 0.572549, 0.584314, 1)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -195,3 +238,109 @@ theme_override_colors/font_color = Color(0.509804, 0.745098, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.458824, 0.447059, 0, 1)
 theme_override_font_sizes/font_size = 13
 text = "VILLAGE BEST SAUNA MIEES"
+
+[node name="viska" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 416.0
+offset_top = 536.0
+offset_right = 600.0
+offset_bottom = 616.0
+icon = ExtResource("2_m50r4")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="viska"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 144.0
+offset_bottom = 58.0
+text = "THROW (R) "
+
+[node name="elud" type="ProgressBar" parent="viska"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.0
+offset_top = 16.0
+offset_right = 68.0
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_umxqw")
+theme_override_styles/fill = SubResource("StyleBoxFlat_vjx2t")
+value = 100.0
+rounded = true
+show_percentage = false
+
+[node name="joo" type="Button" parent="."]
+texture_filter = 1
+offset_left = 512.0
+offset_top = 608.0
+offset_right = 696.0
+offset_bottom = 688.0
+icon = ExtResource("2_m50r4")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="joo"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 144.0
+offset_bottom = 58.0
+text = "DRINK (E) "
+
+[node name="elud" type="ProgressBar" parent="joo"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.0
+offset_top = 16.0
+offset_right = 68.0
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_gpf0i")
+theme_override_styles/fill = SubResource("StyleBoxFlat_uett5")
+value = 100.0
+rounded = true
+show_percentage = false
+
+[node name="PIKALI!" type="Button" parent="."]
+texture_filter = 1
+offset_left = 600.0
+offset_top = 536.0
+offset_right = 784.0
+offset_bottom = 616.0
+icon = ExtResource("2_m50r4")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="PIKALI!"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 144.0
+offset_bottom = 58.0
+text = "DUCK (SPACE) "
+
+[node name="elud" type="ProgressBar" parent="PIKALI!"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.0
+offset_top = 16.0
+offset_right = 68.0
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ivbey")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8eb8i")
+value = 100.0
+rounded = true
+show_percentage = false
