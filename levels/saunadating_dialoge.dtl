@@ -1,9 +1,10 @@
 [background arg="res://assets/saunadate/sauna_dating_background.png" fade="0.0"]
 join jyrki (JyrkiNeutral) 4
+[sound path="res://assets/SFX/DATING_Jyrki_goodsaunaboy.mp3" volume="0.0"]
 jyrki (JyrkiNeutral): Good sauna boy! How do you like my sauna?
 - A sauna with you is always good *smirks at Jyrki*
 	update jyrki (JyrkiFlirty)
-	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
+	[sound path="res://assets/SFX/DATING_Jyrki_flattered.mp3" volume="0.0"]
 	jyrki (JyrkiFlirty): *blushes* I am glad you think so.
 	jyrki (JyrkiFlirty): I like sauna with you too. \:)
 - This was the best sauna experience!
