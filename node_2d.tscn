@@ -1,29 +1,42 @@
-[gd_scene load_steps=14 format=3 uid="uid://ddc68j6efchi5"]
+[gd_scene load_steps=15 format=3 uid="uid://ddc68j6efchi5"]
 
 [ext_resource type="PackedScene" uid="uid://clj0wexf25xj5" path="res://healthbars.tscn" id="1_8oo7h"]
 [ext_resource type="Texture2D" uid="uid://ctuigpqim3p70" path="res://assets/sauna/saunalantern.png" id="1_rljmp"]
 [ext_resource type="Texture2D" uid="uid://dvs2s2q3nfev4" path="res://assets/player/player_sitting.png" id="2_dbdtq"]
 [ext_resource type="Script" path="res://player.gd" id="2_q0cvr"]
-[ext_resource type="Texture2D" uid="uid://bxjbno4hpt2ty" path="res://assets/jyrkki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0003.png" id="3_0wncw"]
 [ext_resource type="Script" path="res://jyrki.gd" id="3_4js3r"]
-[ext_resource type="Texture2D" uid="uid://cgc1abnhkv34v" path="res://assets/jyrkki/jyrki_attack/Jyrkki_placeholder_attack_0003.png" id="5_kn85m"]
-[ext_resource type="Texture2D" uid="uid://ce0fwk611tyy6" path="res://assets/jyrkki/jyrki_attack/Jyrkki_placeholder_attack_0004.png" id="6_pe6hk"]
-[ext_resource type="Texture2D" uid="uid://bqi4ncq8xxxhc" path="res://assets/jyrkki/jyrki_attack/Jyrkki_placeholder_attack_0005.png" id="7_1fihp"]
-[ext_resource type="Texture2D" uid="uid://cg223u470msrh" path="res://assets/jyrkki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0001.png" id="9_sbrsa"]
-[ext_resource type="Texture2D" uid="uid://dyv01ylwtapwn" path="res://assets/jyrkki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0002.png" id="10_aqk7j"]
 [ext_resource type="Script" path="res://jyrki/jyrki_attack.gd" id="11_e7qec"]
+[ext_resource type="AudioStream" uid="uid://bq10umwdkx5fu" path="res://assets/SFX/OST - saunafight (loopable).mp3" id="13_pb32a"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_04iom"]
+load_path = "res://.godot/imported/Jyrkki_placeholder_attack_0003.png-556844808e6372722e119064bf98222d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r6kda"]
+load_path = "res://.godot/imported/Jyrkki_placeholder_attack_0004.png-5f9ddff03868c6e83293b4f8c9405f2a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v2thx"]
+load_path = "res://.godot/imported/Jyrkki_placeholder_attack_0005.png-f35e707a89301b80ea6cee73f5a190ec.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aox0x"]
+load_path = "res://.godot/imported/Jyrkki_placeholder_telegraph_0003.png-8ccd85571039633b5242338d8b32f96c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_48jgu"]
+load_path = "res://.godot/imported/Jyrkki_placeholder_telegraph_0001.png-c39d5daa45fedfb9a4a4a2c06b0ec8c5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2jeut"]
+load_path = "res://.godot/imported/Jyrkki_placeholder_telegraph_0002.png-762c8c15638557ad06f2fa86e4aec627.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ntdi8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_kn85m")
+"texture": SubResource("CompressedTexture2D_04iom")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_pe6hk")
+"texture": SubResource("CompressedTexture2D_r6kda")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_1fihp")
+"texture": SubResource("CompressedTexture2D_v2thx")
 }],
 "loop": false,
 "name": &"attack",
@@ -36,7 +49,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_0wncw")
+"texture": SubResource("CompressedTexture2D_aox0x")
 }],
 "loop": true,
 "name": &"default",
@@ -54,10 +67,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_sbrsa")
+"texture": SubResource("CompressedTexture2D_48jgu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_aqk7j")
+"texture": SubResource("CompressedTexture2D_2jeut")
 }],
 "loop": false,
 "name": &"telegraph",
@@ -114,6 +127,9 @@ one_shot = true
 
 [node name="Healthbars" parent="." instance=ExtResource("1_8oo7h")]
 unique_name_in_owner = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_pb32a")
 
 [connection signal="attacking" from="player" to="jyrki" method="_on_player_attacking"]
 [connection signal="animation_finished" from="jyrki/jyrki_sprite" to="jyrki" method="_on_jyrki_sprite_animation_finished"]
