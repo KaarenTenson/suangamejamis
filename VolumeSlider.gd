@@ -14,4 +14,4 @@ func _on_value_changed(value: float) -> void:
 
 
 func _on_volume_pressed():
-	visible = true
+	visible = not visible
