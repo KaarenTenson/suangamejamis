@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bqbkxgpi2sn1c"]
+[gd_scene load_steps=17 format=3 uid="uid://clj0wexf25xj5"]
 
 [ext_resource type="Texture2D" uid="uid://k6mu061ntby2" path="res://toutorial.png" id="1_hnfgc"]
 [ext_resource type="Texture2D" uid="uid://bbr3qs25x0tru" path="res://nuppud.png" id="2_m50r4"]
@@ -159,6 +159,7 @@ rounded = true
 show_percentage = false
 
 [node name="Label" type="Label" parent="TextureRect/elud"]
+layout_mode = 0
 offset_left = 32.0
 offset_right = 72.0
 offset_bottom = 23.0
@@ -182,6 +183,7 @@ rounded = true
 show_percentage = false
 
 [node name="Label" type="Label" parent="TextureRect/stamina"]
+layout_mode = 0
 offset_left = 32.0
 offset_right = 72.0
 offset_bottom = 23.0
@@ -189,6 +191,7 @@ text = "STAMINA"
 
 [node name="jürki" type="TextureRect" parent="."]
 texture_filter = 1
+layout_mode = 0
 offset_left = 768.0
 offset_top = 192.0
 offset_right = 992.0
@@ -213,6 +216,7 @@ rounded = true
 show_percentage = false
 
 [node name="Label" type="Label" parent="jürki/elud"]
+layout_mode = 0
 offset_left = 32.0
 offset_right = 72.0
 offset_bottom = 23.0
@@ -277,6 +281,7 @@ show_percentage = false
 
 [node name="joo" type="Button" parent="."]
 texture_filter = 1
+layout_mode = 0
 offset_left = 512.0
 offset_top = 608.0
 offset_right = 696.0
@@ -312,6 +317,7 @@ show_percentage = false
 
 [node name="PIKALI!" type="Button" parent="."]
 texture_filter = 1
+layout_mode = 0
 offset_left = 600.0
 offset_top = 536.0
 offset_right = 784.0

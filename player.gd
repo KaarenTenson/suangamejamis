@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var heal_cooldown = $heal_cooldown
+@onready var heal_cooldown = $heal_cooldown	
 
 const HP_MAX = 100.0
 const STAMINA_MAX = 100.0
