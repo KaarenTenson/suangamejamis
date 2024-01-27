@@ -15,18 +15,16 @@ func _input(event: InputEvent):
 
 func afplus10():
 	af += 10
+	print(af)
 
 func afplus20():
 	af += 20
+	print(af)
 	
 func afminus10():
 	af -= 10
+	print(af)
 	
 func afminus20():
 	af -= 20
-
-func check():
-	if af < -30:
-		return
-	else:
-		pass
+	print(af)
