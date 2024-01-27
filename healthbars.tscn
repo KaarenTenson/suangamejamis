@@ -1,0 +1,197 @@
+[gd_scene load_steps=10 format=3 uid="uid://bqbkxgpi2sn1c"]
+
+[ext_resource type="Texture2D" uid="uid://k6mu061ntby2" path="res://toutorial.png" id="1_hnfgc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mseov"]
+bg_color = Color(0.627451, 0.615686, 0.32549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otyx8"]
+bg_color = Color(0.780392, 0.545098, 0.266667, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afrp5"]
+bg_color = Color(0.223529, 0.396078, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tx7qh"]
+bg_color = Color(0.12549, 0.760784, 0.278431, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myjwv"]
+bg_color = Color(0.164706, 0.211765, 0.533333, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhps8"]
+bg_color = Color(0.156863, 0.521569, 0.984314, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0thwg"]
+bg_color = Color(0.403922, 0.0392157, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dod7u"]
+bg_color = Color(0.647059, 0.160784, 0.0941176, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 320.0
+offset_top = 192.0
+offset_right = 544.0
+offset_bottom = 320.0
+texture = ExtResource("1_hnfgc")
+
+[node name="alkohol" type="ProgressBar" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.0
+offset_top = 80.0
+offset_right = 72.0
+offset_bottom = 107.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_mseov")
+theme_override_styles/fill = SubResource("StyleBoxFlat_otyx8")
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="TextureRect/alkohol"]
+layout_mode = 0
+offset_left = 32.0
+offset_right = 72.0
+offset_bottom = 23.0
+text = "ALCOHOL"
+
+[node name="elud" type="ProgressBar" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.0
+offset_top = 16.0
+offset_right = 72.0
+offset_bottom = 43.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_afrp5")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tx7qh")
+value = 100.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="TextureRect/elud"]
+offset_left = 32.0
+offset_right = 72.0
+offset_bottom = 23.0
+text = "HEALTH"
+
+[node name="stamina" type="ProgressBar" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.0
+offset_top = 48.0
+offset_right = 72.0
+offset_bottom = 75.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_myjwv")
+theme_override_styles/fill = SubResource("StyleBoxFlat_bhps8")
+value = 100.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="TextureRect/stamina"]
+offset_left = 32.0
+offset_right = 72.0
+offset_bottom = 23.0
+text = "STAMINA"
+
+[node name="jürki" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 768.0
+offset_top = 192.0
+offset_right = 992.0
+offset_bottom = 320.0
+texture = ExtResource("1_hnfgc")
+
+[node name="elud" type="ProgressBar" parent="jürki"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.0
+offset_top = 48.0
+offset_right = 72.0
+offset_bottom = 75.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_0thwg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dod7u")
+value = 100.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="jürki/elud"]
+offset_left = 32.0
+offset_right = 72.0
+offset_bottom = 23.0
+text = "HEALTH"
+
+[node name="NIMI" type="Label" parent="jürki"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 24.0
+offset_right = 135.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.262745, 0.290196, 0.168627, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "JYRKI"
+
+[node name="Label2" type="Label" parent="jürki"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 80.0
+offset_right = 198.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(0.509804, 0.745098, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.458824, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 13
+text = "VILLAGE BEST SAUNA MIEES"
