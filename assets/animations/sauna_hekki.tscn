@@ -1,0 +1,147 @@
+[gd_scene load_steps=22 format=3 uid="uid://bkln5luhynb7r"]
+
+[ext_resource type="Texture2D" uid="uid://cf4xdc2j8g31f" path="res://assets/saunadate/jyrki_destroy_sauna1.png" id="1_hepox"]
+[ext_resource type="Texture2D" uid="uid://cjhuc2abdxaf8" path="res://assets/saunadate/winter_sauna.png" id="1_wg4jb"]
+[ext_resource type="Texture2D" uid="uid://xg6t45lu1j6i" path="res://assets/saunadate/welcome_to_hell1.png" id="2_31bmt"]
+[ext_resource type="Texture2D" uid="uid://b4kp50ipr6oyj" path="res://assets/saunadate/jyrki_destroy_sauna2.png" id="2_ocqsj"]
+[ext_resource type="Texture2D" uid="uid://qgplv2bsbp66" path="res://assets/saunadate/welcome_to_hell2.png" id="3_nb60d"]
+[ext_resource type="Texture2D" uid="uid://dslvuvxux5832" path="res://assets/saunadate/welcome_to_hell3.png" id="4_hybeh"]
+[ext_resource type="Texture2D" uid="uid://bdmfx7ydlqnok" path="res://assets/saunadate/welcome_to_hell4.png" id="5_a2ykh"]
+[ext_resource type="Texture2D" uid="uid://b7s16b5b0xbmu" path="res://assets/saunadate/welcome_to_hell5.png" id="6_lsfp6"]
+[ext_resource type="Texture2D" uid="uid://dn7niejyjm4a2" path="res://assets/saunadate/welcome_to_hell6.png" id="7_c6tiq"]
+[ext_resource type="Texture2D" uid="uid://hilreguqmm56" path="res://assets/saunadate/welcome_to_hell7.png" id="8_blsxp"]
+[ext_resource type="Texture2D" uid="uid://by1r15ck1nf05" path="res://assets/saunadate/welcome_to_hell8.png" id="9_yrvdt"]
+[ext_resource type="Texture2D" uid="uid://bkm6l8wjyjvu1" path="res://assets/saunadate/welcome_to_hell9.png" id="10_hx5sr"]
+[ext_resource type="Texture2D" uid="uid://dvsm4yjmjlixe" path="res://assets/saunadate/welcome_to_hell10.png" id="11_x285w"]
+[ext_resource type="Texture2D" uid="uid://cfpq205gpovcm" path="res://assets/saunadate/welcome_to_hell11.png" id="12_3w2cm"]
+[ext_resource type="Texture2D" uid="uid://cu3oxfnju06yu" path="res://assets/saunadate/welcome_to_hell12.png" id="13_wikxo"]
+[ext_resource type="Texture2D" uid="uid://c1r24drfg6o8y" path="res://assets/saunadate/welcome_to_hell13.png" id="14_yckp5"]
+[ext_resource type="Texture2D" uid="uid://c8p8gyh0qvwih" path="res://assets/saunadate/welcome_to_hell14.png" id="15_qbap1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_unevh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hepox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ocqsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_hepox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ocqsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_hepox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ocqsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_hepox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ocqsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_hepox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_wg4jb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_31bmt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nb60d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hybeh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a2ykh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lsfp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_c6tiq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_blsxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yrvdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hx5sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_x285w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_3w2cm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wikxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yckp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qbap1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_887h7"]
+resource_name = "tuli"
+length = 25.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+}
+
+[sub_resource type="Animation" id="Animation_lyhlm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j7db2"]
+_data = {
+"RESET": SubResource("Animation_lyhlm"),
+"tuli": SubResource("Animation_887h7")
+}
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(637, 355.5)
+scale = Vector2(1.76944, 1.96944)
+sprite_frames = SubResource("SpriteFrames_unevh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_j7db2")
+}
