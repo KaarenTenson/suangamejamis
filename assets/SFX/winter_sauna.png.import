@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjhuc2abdxaf8"
-path="res://.godot/imported/winter_sauna.png-df0784be013cc81a22f0a214e1dd6cd6.ctex"
+path="res://.godot/imported/winter_sauna.png-306a59d2c11d24e9bae2a22340b34fc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/saunadate/winter_sauna.png"
-dest_files=["res://.godot/imported/winter_sauna.png-df0784be013cc81a22f0a214e1dd6cd6.ctex"]
+source_file="res://assets/SFX/winter_sauna.png"
+dest_files=["res://.godot/imported/winter_sauna.png-306a59d2c11d24e9bae2a22340b34fc3.ctex"]
 
 [params]
 
