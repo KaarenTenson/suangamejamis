@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://ddc68j6efchi5"]
+[gd_scene load_steps=43 format=3 uid="uid://d3lx6aqpl1ew2"]
 
 [ext_resource type="PackedScene" uid="uid://bqbkxgpi2sn1c" path="res://healthbars.tscn" id="1_8oo7h"]
 [ext_resource type="Script" path="res://node_2d.gd" id="1_ivjwt"]
@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://jyrki.gd" id="3_4js3r"]
 [ext_resource type="Texture2D" uid="uid://dqbl1la7fykwv" path="res://assets/sauna/animpeategelane_0001.png" id="3_nfh1a"]
 [ext_resource type="Texture2D" uid="uid://dx38t04cvy5mi" path="res://assets/sauna/animpeategelane_0002.png" id="4_0na7y"]
-[ext_resource type="AudioStream" uid="uid://cug6kfyj4qlfb" path="res://assets/SFX/goodleil.mp3" id="4_tf70q"]
+[ext_resource type="AudioStream" uid="uid://dw5oq6r2do5xk" path="res://assets/SFX/goodleil.mp3" id="4_tf70q"]
 [ext_resource type="Texture2D" uid="uid://dsmu6mj4iwbry" path="res://assets/sauna/animpeategelane_0003.png" id="5_grjla"]
 [ext_resource type="Texture2D" uid="uid://75y1xwgpvsjf" path="res://assets/sauna/animpeategelane_0004.png" id="6_tydjt"]
 [ext_resource type="Texture2D" uid="uid://citagvusabnt1" path="res://assets/sauna/animpeategelane_0005.png" id="7_m3154"]
@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cv4bf6g0xlplt" path="res://assets/sauna/animpeategelaneduck_0002.png" id="11_bavxg"]
 [ext_resource type="Script" path="res://jyrki/jyrki_attack.gd" id="11_e7qec"]
 [ext_resource type="Texture2D" uid="uid://u6eg20wpvo0c" path="res://assets/sauna/animpeategelaneviskamine_0001.png" id="13_h08xo"]
-[ext_resource type="AudioStream" uid="uid://l2s80c6fwkmx" path="res://assets/SFX/OST - saunafight (loopable).mp3" id="13_pb32a"]
+[ext_resource type="AudioStream" uid="uid://bq10umwdkx5fu" path="res://assets/SFX/OST - saunafight (loopable).mp3" id="13_pb32a"]
 [ext_resource type="Texture2D" uid="uid://caqqfcrtaj6n0" path="res://assets/sauna/animpeategelaneviskamine_0002.png" id="14_sxo67"]
 [ext_resource type="Texture2D" uid="uid://8vw5oqlaijko" path="res://assets/sauna/animpeategelaneviskamine_0003.png" id="15_ves2p"]
 [ext_resource type="Texture2D" uid="uid://dnnmdqgq6dgtv" path="res://assets/sauna/animpeategelaneviskamine_0004.png" id="16_opi1j"]
@@ -34,8 +34,11 @@
 [ext_resource type="Texture2D" uid="uid://dyv01ylwtapwn" path="res://assets/jyrki/jyrki_telegraph/Jyrkki_placeholder_telegraph_0002.png" id="25_jjg88"]
 [ext_resource type="Texture2D" uid="uid://c6rpflweuus1c" path="res://assets/sauna/GOODLEIL.png" id="29_kah53"]
 [ext_resource type="AudioStream" uid="uid://dvdj7htx7jpag" path="res://assets/SFX/leil_2.mp3" id="29_sl4om"]
-[ext_resource type="AudioStream" uid="uid://d8aa2fye23tb" path="res://assets/SFX/olutta4promillea.mp3" id="35_2kpna"]
+[ext_resource type="AudioStream" uid="uid://c3to4ibt2ny6m" path="res://assets/SFX/olutta4promillea.mp3" id="35_2kpna"]
 [ext_resource type="Texture2D" uid="uid://xi8omna8gpst" path="res://assets/sauna/GOODÕLU.png" id="36_e18a0"]
+[ext_resource type="Texture2D" uid="uid://c3hr6nsb7jfa" path="res://ringnuppud.png" id="37_jj646"]
+[ext_resource type="Texture2D" uid="uid://etl08p8nxfvu" path="res://speaker (1).svg" id="38_f4fvi"]
+[ext_resource type="Script" path="res://VolumeSlider.gd" id="39_6l0tg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lle1d"]
 resource_local_to_scene = true
@@ -164,6 +167,13 @@ animations = [{
 "speed": 2.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wnirg"]
+bg_color = Color(0.745098, 0.552941, 0.435294, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ivjwt")
 
@@ -254,6 +264,38 @@ stream = ExtResource("35_2kpna")
 visible = false
 texture = ExtResource("36_e18a0")
 
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 80.0
+offset_bottom = 96.0
+texture = ExtResource("37_jj646")
+expand_mode = 1
+
+[node name="volume" type="Button" parent="TextureRect2"]
+layout_mode = 1
+offset_left = 7.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 56.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wnirg")
+icon = ExtResource("38_f4fvi")
+flat = true
+expand_icon = true
+
+[node name="VolumeSlider" type="HSlider" parent="TextureRect2"]
+visible = false
+layout_mode = 0
+offset_left = 74.0
+offset_top = 25.0
+offset_right = 223.0
+offset_bottom = 41.0
+max_value = 1.0
+step = 0.05
+value = 0.5
+script = ExtResource("39_6l0tg")
+
 [connection signal="attacking" from="player" to="jyrki" method="_on_player_attacking"]
 [connection signal="gameOver" from="player" to="." method="_on_player_game_over"]
 [connection signal="goodleil" from="player" to="." method="_on_player_goodleil"]
@@ -263,5 +305,7 @@ texture = ExtResource("36_e18a0")
 [connection signal="timeout" from="jyrki/jyrki_attack/attack_cooldown" to="jyrki/jyrki_attack" method="_on_attack_cooldown_timeout"]
 [connection signal="timeout" from="jyrki/jyrki_attack/telegraph_timer" to="jyrki/jyrki_attack" method="_on_telegraph_timer_timeout"]
 [connection signal="timeout" from="goodleil_timer" to="." method="_on_goodleil_timer_timeout"]
+[connection signal="pressed" from="TextureRect2/volume" to="TextureRect2/VolumeSlider" method="_on_volume_pressed"]
+[connection signal="value_changed" from="TextureRect2/VolumeSlider" to="TextureRect2/VolumeSlider" method="_on_value_changed"]
 
 [editable path="Healthbars"]
