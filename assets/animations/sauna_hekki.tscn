@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://bkln5luhynb7r"]
 
-[ext_resource type="Texture2D" uid="uid://cf4xdc2j8g31f" path="res://assets/jyrki_destroy_sauna1.png" id="1_gbfdx"]
-[ext_resource type="Texture2D" uid="uid://b4kp50ipr6oyj" path="res://assets/jyrki_destroy_sauna2.png" id="1_qxw74"]
+[ext_resource type="Texture2D" uid="uid://cf4xdc2j8g31f" path="res://assets/saunadate/jyrki_destroy_sauna1.png" id="1_gbfdx"]
+[ext_resource type="Texture2D" uid="uid://b4kp50ipr6oyj" path="res://assets/saunadate/jyrki_destroy_sauna2.png" id="1_qxw74"]
 [ext_resource type="Texture2D" uid="uid://xg6t45lu1j6i" path="res://assets/saunadate/welcome_to_hell1.png" id="2_31bmt"]
 [ext_resource type="Texture2D" uid="uid://qgplv2bsbp66" path="res://assets/saunadate/welcome_to_hell2.png" id="3_nb60d"]
 [ext_resource type="Texture2D" uid="uid://dslvuvxux5832" path="res://assets/saunadate/welcome_to_hell3.png" id="4_hybeh"]

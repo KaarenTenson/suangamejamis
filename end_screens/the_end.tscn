@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://ddajb67df7ncf"]
+[gd_scene load_steps=7 format=3 uid="uid://ddajb67df7ncf"]
 
 [ext_resource type="Script" path="res://end_screens/the_end.gd" id="1_o5yy5"]
-[ext_resource type="AudioStream" uid="uid://bq10umwdkx5fu" path="res://assets/SFX/OST - saunafight (loopable).mp3" id="2_5tprb"]
+[ext_resource type="AudioStream" uid="uid://7lab5gkga5kj" path="res://assets/SFX/OST - saunaend.mp3" id="2_6bm2h"]
+[ext_resource type="Texture2D" uid="uid://d3q80xlufmqh7" path="res://assets/saunadate/jyrki_happy.png" id="3_kdfb8"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_x5nqo"]
 font_size = 32
@@ -17,7 +18,7 @@ anchors_preset = 0
 script = ExtResource("1_o5yy5")
 
 [node name="sauna_time" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_5tprb")
+stream = ExtResource("2_6bm2h")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -57,6 +58,11 @@ offset_right = 1292.0
 offset_bottom = 295.0
 text = "If you see this we ran out of time to make our DDR boomer shooter side scroller tower defense psychedelic ending.
 
-The main character and Jyrki, who turned out to be satan, proceed to have a glorious fight in the depths of hell along to beats that go gloriously hard."
+The main character and Jyrki, who turned out to be satan, proceed to have a glorious battle in the depths of hell along to beats that go gloriously hard."
 label_settings = SubResource("LabelSettings_vxtjb")
 horizontal_alignment = 1
+
+[node name="jyrki" type="Sprite2D" parent="."]
+position = Vector2(1228, 669)
+rotation = -0.522129
+texture = ExtResource("3_kdfb8")
