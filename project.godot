@@ -26,6 +26,7 @@ directories/dch_directory={
 "jyrki": "res://levels/jyrki.dch"
 }
 directories/dtl_directory={
+"affection": "res://levels/affection.dtl",
 "saunadating_dialoge": "res://levels/saunadating_dialoge.dtl"
 }
 layout/style_list=[]
