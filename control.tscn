@@ -1,14 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://drflakitg22ba"]
+[gd_scene load_steps=12 format=3 uid="uid://drflakitg22ba"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_8kgaw"]
 [ext_resource type="Texture2D" uid="uid://dwx5phiib25o6" path="res://craftpix-net-882062-free-winter-backgrounds-pixel-art/winter 8/hd.png" id="1_rd42q"]
 [ext_resource type="Texture2D" uid="uid://etl08p8nxfvu" path="res://speaker (1).svg" id="3_v3xqg"]
 [ext_resource type="Texture2D" uid="uid://bbr3qs25x0tru" path="res://nuppud.png" id="3_ww6py"]
-[ext_resource type="AudioStream" uid="uid://da4vly48k6iwa" path="res://emotional-damage-meme.wav" id="4_s15wm"]
+[ext_resource type="AudioStream" uid="uid://crkridwrg1dl0" path="res://assets/SFX/OST - saunatitle (loopable).mp3" id="4_kra35"]
 [ext_resource type="Texture2D" uid="uid://c3hr6nsb7jfa" path="res://ringnuppud.png" id="5_8gca5"]
 [ext_resource type="Script" path="res://VolumeSlider.gd" id="5_a6js8"]
 [ext_resource type="Texture2D" uid="uid://bn372dxivhhuq" path="res://cancel.svg" id="6_lr4fe"]
 [ext_resource type="Texture2D" uid="uid://k6mu061ntby2" path="res://toutorial.png" id="8_c03tl"]
+[ext_resource type="FontFile" uid="uid://bo73n1slaruag" path="res://woodys/Woodys.ttf" id="10_6htmo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_egyg5"]
 bg_color = Color(0.745098, 0.552941, 0.435294, 1)
@@ -98,14 +99,16 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_s15wm")
+stream = ExtResource("4_kra35")
 autoplay = true
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_right = 64.0
-offset_bottom = 64.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 80.0
+offset_bottom = 72.0
 texture = ExtResource("5_8gca5")
 expand_mode = 1
 
@@ -203,6 +206,18 @@ offset_right = 374.0
 offset_bottom = 290.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "(E)"
+
+[node name="title" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 1411.0
+offset_bottom = 170.0
+theme_override_colors/font_color = Color(0.447059, 0.286275, 0.027451, 1)
+theme_override_fonts/font = ExtResource("10_6htmo")
+theme_override_font_sizes/font_size = 35
+text = "In a Sauna with Finnish Man Jyrki from Ailionjärvi"
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="toutorial" to="." method="_on_toutorial_pressed"]
