@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://end_screens/game_over.gd" id="1_iek8y"]
 [ext_resource type="Texture2D" uid="uid://cbocm7uihhrnx" path="res://assets/sauna/GAMEOVER.png" id="2_2lflt"]
-[ext_resource type="AudioStream" uid="uid://djv4k05ujss4x" path="res://assets/SFX/saunatime.mp3" id="3_817bg"]
+[ext_resource type="AudioStream" uid="uid://cin1ki8sja8ru" path="res://assets/SFX/gameover_Jyrki.mp3" id="3_ua807"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_x5nqo"]
 font_size = 32
@@ -21,7 +21,7 @@ offset_bottom = 212.0
 texture = ExtResource("2_2lflt")
 
 [node name="sauna_time" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_817bg")
+stream = ExtResource("3_ua807")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
