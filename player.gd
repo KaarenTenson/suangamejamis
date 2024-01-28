@@ -7,7 +7,12 @@ extends Node2D
 
 @onready var healthbars = %Healthbars
 
-@onready var goodleil = $goodleil
+@onready var leil1 = $leil1
+@onready var ollechug = $ollechug
+@onready var olutta = $olutta4promillea
+
+signal goodleil
+signal gameOver(reason)
 
 
 const HP_MAX = 100.0
@@ -35,6 +40,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("heal") && heal_cooldown.is_stopped():
 		heal()
 		animated_sprite_2d.play("drink")
+		ollechug.play()
 		heal_cooldown.start()
 		
 		
@@ -48,6 +54,12 @@ func _process(delta):
 		
 	if stamina < 100:
 		stamina += delta*5
+		
+	if stamina > STAMINA_MAX:
+		stamina = STAMINA_MAX
+	
+	if hp > HP_MAX:
+		hp = HP_MAX
 	
 	if Input.is_action_just_pressed("attack") && attack_cooldown.is_stopped() && stamina > 5:
 		attack_cooldown.start()
@@ -58,16 +70,15 @@ func attack():
 	if stamina > 0:
 		emit_signal("attacking")
 		stamina -= 20.0
-		goodleil.play()
-	
-	
-func game_over():
-	get_tree().change_scene_to_file("res://control.tscn")
+		leil1.play()
+		
+		if randf() < 0.3:
+			emit_signal("goodleil")
 	
 func take_damage():
-	hp -= 20.0
+	hp -= 25.0
 	if hp <= 0:
-		game_over()
+		gameOver.emit("too_hot")
 		
 		
 func _on_jyrki_attack_attacking():
@@ -78,11 +89,8 @@ func _on_jyrki_attack_attacking():
 		take_damage()
 		
 func heal():
-	hp += 20.0
+	hp += 15.0
 	stamina += 20.0
-	print("HP:"+str(hp))
-	if drunk < 75.0:
-		drunk += 25.0;
-		print("DRUNK:" + str(drunk))
-	else:
-		game_over()
+	drunk += 25.0;
+	if drunk > 75.0:
+		gameOver.emit("too_drunk")

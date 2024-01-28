@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://xb0adof1ouxp"]
+
+[ext_resource type="Script" path="res://rhythm.gd" id="1_0dyqe"]
+[ext_resource type="PackedScene" uid="uid://dfy0itxgsa8ej" path="res://addons/midi/ADSR.tscn" id="2_ri1b4"]
+[ext_resource type="PackedScene" uid="uid://cuyd1qv0pn26e" path="res://addons/midi/MidiPlayer.tscn" id="3_vkdjw"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0dyqe")
+
+[node name="ADSR" parent="." instance=ExtResource("2_ri1b4")]
+
+[node name="MidiPlayer" parent="." instance=ExtResource("3_vkdjw")]
+file = "res://assets/SFX/8BIT12 - GP Ensemble - 4 4 - D  minor - 80BPM - Reduced.mid"
+playing = true
+soundfont = "res://assets/SFX/8bitsf.SF2"
+
+[connection signal="midi_event" from="MidiPlayer" to="." method="_on_midi_player_midi_event"]

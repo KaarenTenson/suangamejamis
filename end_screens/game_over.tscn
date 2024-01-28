@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7wka73gg0yb7"]
+
+[ext_resource type="Script" path="res://end_screens/game_over.gd" id="1_iek8y"]
+[ext_resource type="Texture2D" uid="uid://cbocm7uihhrnx" path="res://assets/sauna/GAMEOVER.png" id="2_2lflt"]
+[ext_resource type="AudioStream" uid="uid://djv4k05ujss4x" path="res://assets/SFX/saunatime.mp3" id="3_817bg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_x5nqo"]
+font_size = 32
+
+[node name="game_over" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_iek8y")
+
+[node name="game_over" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 132.0
+offset_right = 945.0
+offset_bottom = 212.0
+texture = ExtResource("2_2lflt")
+
+[node name="sauna_time" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_817bg")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 330.0
+offset_right = 874.0
+offset_bottom = 562.0
+text = "This was your last sauna.
+
+Press R to restart
+Press Space to continue"
+label_settings = SubResource("LabelSettings_x5nqo")
+horizontal_alignment = 1
+
+[node name="wait_before_input" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+autostart = true
