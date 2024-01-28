@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://ddc68j6efchi5"]
+[gd_scene load_steps=32 format=3 uid="uid://ddc68j6efchi5"]
 
 [ext_resource type="PackedScene" uid="uid://bqbkxgpi2sn1c" path="res://healthbars.tscn" id="1_8oo7h"]
 [ext_resource type="Texture2D" uid="uid://ctuigpqim3p70" path="res://assets/sauna/saunalantern.png" id="1_rljmp"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://dnnmdqgq6dgtv" path="res://assets/sauna/animpeategelaneviskamine_0004.png" id="16_opi1j"]
 [ext_resource type="Texture2D" uid="uid://cubfywwajmvli" path="res://assets/sauna/animpeategelaneviskamine_0005.png" id="17_u7yjr"]
 [ext_resource type="Texture2D" uid="uid://bey06mk4wp47u" path="res://assets/sauna/animpeategelaneviskamine_0006.png" id="18_ix22d"]
+[ext_resource type="AudioStream" uid="uid://d0ttcfpbubg00" path="res://assets/SFX/ollechug_1.mp3" id="19_kh5hg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lle1d"]
 resource_local_to_scene = true
@@ -198,6 +199,9 @@ one_shot = true
 [node name="goodleil" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource("4_tf70q")
 volume_db = -2.0
+
+[node name="ollechug" type="AudioStreamPlayer" parent="player"]
+stream = ExtResource("19_kh5hg")
 
 [node name="jyrki" type="Node2D" parent="."]
 script = ExtResource("3_4js3r")

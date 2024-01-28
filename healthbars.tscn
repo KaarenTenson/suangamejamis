@@ -5,14 +5,14 @@
 [ext_resource type="Texture2D" uid="uid://bbr3qs25x0tru" path="res://nuppud.png" id="2_m50r4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mseov"]
-bg_color = Color(0.627451, 0.615686, 0.32549, 1)
+bg_color = Color(0.717647, 0.705882, 0.4, 1)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otyx8"]
-bg_color = Color(0.780392, 0.545098, 0.266667, 1)
+bg_color = Color(0.54902, 0.368627, 0.156863, 1)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -61,7 +61,7 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_umxqw"]
-bg_color = Color(0.756863, 0.619608, 0.0588235, 1)
+bg_color = Color(0.984314, 0.819608, 0.2, 1)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -248,9 +248,9 @@ text = "VILLAGE BEST SAUNA MIEES"
 [node name="viska" type="Button" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_left = 416.0
+offset_left = 456.0
 offset_top = 536.0
-offset_right = 600.0
+offset_right = 640.0
 offset_bottom = 616.0
 icon = ExtResource("2_m50r4")
 flat = true
@@ -284,9 +284,9 @@ show_percentage = false
 [node name="joo" type="Button" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_left = 512.0
+offset_left = 552.0
 offset_top = 608.0
-offset_right = 696.0
+offset_right = 736.0
 offset_bottom = 688.0
 icon = ExtResource("2_m50r4")
 flat = true
@@ -320,9 +320,9 @@ show_percentage = false
 [node name="PIKALI!" type="Button" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_left = 600.0
+offset_left = 640.0
 offset_top = 536.0
-offset_right = 784.0
+offset_right = 824.0
 offset_bottom = 616.0
 icon = ExtResource("2_m50r4")
 flat = true

@@ -8,6 +8,7 @@ extends Node2D
 @onready var healthbars = %Healthbars
 
 @onready var goodleil = $goodleil
+@onready var ollechug = $ollechug
 
 
 const HP_MAX = 100.0
@@ -35,6 +36,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("heal") && heal_cooldown.is_stopped():
 		heal()
 		animated_sprite_2d.play("drink")
+		ollechug.play()
 		heal_cooldown.start()
 		
 		
@@ -62,7 +64,7 @@ func attack():
 	
 	
 func game_over():
-	get_tree().change_scene_to_file("res://control.tscn")
+	get_tree().change_scene_to_file("res://KAUTSSCENE.tscn")
 	
 func take_damage():
 	hp -= 20.0
