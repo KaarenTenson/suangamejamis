@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://7s30oqfsukc7"]
+
+[ext_resource type="Texture2D" uid="uid://xi8omna8gpst" path="res://assets/sauna/GOODÕLU.png" id="1_1vqxw"]
+[ext_resource type="Script" path="res://end_screens/too_drunk_end_screen.gd" id="1_siqg7"]
+[ext_resource type="AudioStream" uid="uid://d8aa2fye23tb" path="res://assets/SFX/olutta4promillea.mp3" id="2_wtmv1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_x5nqo"]
+font_size = 32
+
+[node name="too_drunk_end_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_siqg7")
+
+[node name="olutta" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 132.0
+offset_right = 945.0
+offset_bottom = 212.0
+texture = ExtResource("1_1vqxw")
+
+[node name="olutta_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_wtmv1")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 330.0
+offset_right = 874.0
+offset_bottom = 562.0
+text = "You couldn't handle your beer
+
+Press R to restart
+Press Space to continue"
+label_settings = SubResource("LabelSettings_x5nqo")
+horizontal_alignment = 1
+
+[node name="wait_before_input" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+autostart = true

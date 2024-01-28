@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://cp3qvg5uu3rn"]
+
+[ext_resource type="Texture2D" uid="uid://ctuigpqim3p70" path="res://assets/sauna/saunalantern.png" id="1_3uk8q"]
+[ext_resource type="Script" path="res://tutoriaSCENEl.gd" id="1_ptypw"]
+[ext_resource type="PackedScene" uid="uid://bqbkxgpi2sn1c" path="res://healthbars.tscn" id="2_hy0b3"]
+[ext_resource type="Texture2D" uid="uid://k6mu061ntby2" path="res://toutorial.png" id="3_xtjf4"]
+[ext_resource type="Texture2D" uid="uid://bbr3qs25x0tru" path="res://nuppud.png" id="5_vviaw"]
+
+[node name="tutorial" type="Node2D"]
+script = ExtResource("1_ptypw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_3uk8q")
+
+[node name="Healthbars" parent="." instance=ExtResource("2_hy0b3")]
+unique_name_in_owner = true
+
+[node name="toutorialpanel" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 408.0
+offset_top = 56.0
+offset_right = 824.0
+offset_bottom = 616.0
+texture = ExtResource("3_xtjf4")
+
+[node name="Button" type="Button" parent="toutorialpanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -136.0
+offset_right = 80.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "PLAY"
+icon = ExtResource("5_vviaw")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Label" type="Label" parent="toutorialpanel"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 88.0
+offset_right = 382.0
+offset_bottom = 166.0
+text = "TO WIN YOU HAVE TO DEFEATH JYRKI
+IN SAUN STANDOFF.
+
+TO WIN DUCK WHEN JYRKI THROWS SPACE.
+
+TO DEFEAT THROW HARD LEIL WITH R
+
+YOU CAN ALSO REPLENISH YOUR HEALTH
+AND STAMINE WITH DRINKING BEER
+BE CAREFUL WHEN ALCHOL METER GOES
+FULL YOU LOSE CONSCIOUSNESS"
+
+[connection signal="pressed" from="toutorialpanel/Button" to="." method="_on_button_pressed"]
+
+[editable path="Healthbars"]

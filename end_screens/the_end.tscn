@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddajb67df7ncf"]
+
+[ext_resource type="Script" path="res://end_screens/the_end.gd" id="1_o5yy5"]
+[ext_resource type="AudioStream" uid="uid://l2s80c6fwkmx" path="res://assets/SFX/OST - saunafight (loopable).mp3" id="2_5tprb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_x5nqo"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_yuerj"]
+font_size = 64
+
+[node name="the_end" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_o5yy5")
+
+[node name="sauna_time" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_5tprb")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 331.0
+offset_right = 1160.0
+offset_bottom = 760.0
+text = "Our time and budget was wisely  invested into beer and saunas.
+
+Have a great day!
+Sauna is always waiting.
+
+
+Press Space to go to main menu"
+label_settings = SubResource("LabelSettings_x5nqo")
+horizontal_alignment = 1
+
+[node name="wait_before_input" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+autostart = true
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 421.0
+offset_top = 66.0
+offset_right = 885.0
+offset_bottom = 298.0
+text = "GG"
+label_settings = SubResource("LabelSettings_yuerj")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 239.0
+offset_right = 1106.0
+offset_bottom = 262.0
+text = "If you see this we ran out of time to make our DDR boomer shooter side scroller tower defense psychedelic ending."
