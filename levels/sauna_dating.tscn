@@ -7,6 +7,7 @@
 script = ExtResource("1_6qnvt")
 
 [node name="SaunaDatingBackground" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(656, 376)
 scale = Vector2(1.81667, 2.07222)
 texture = ExtResource("2_up8ui")
