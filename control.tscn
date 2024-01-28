@@ -137,20 +137,72 @@ visible = false
 texture_filter = 1
 layout_mode = 0
 offset_left = 488.0
-offset_top = 232.0
-offset_right = 816.0
+offset_top = 120.0
+offset_right = 904.0
 offset_bottom = 632.0
 texture = ExtResource("8_c03tl")
 
 [node name="exittoutoutorial" type="Button" parent="toutorialpanel"]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 8.0
-offset_right = 320.0
-offset_bottom = 40.0
+offset_left = 328.0
+offset_top = 16.0
+offset_right = 360.0
+offset_bottom = 48.0
 icon = ExtResource("6_lr4fe")
 flat = true
 expand_icon = true
+
+[node name="Label" type="Label" parent="toutorialpanel"]
+offset_left = 48.0
+offset_top = 88.0
+offset_right = 382.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 15
+text = "
+
+TO WIN DUCK WHEN JYRKI THROWS
+
+TO DEFEAT THROW HARD LEIL WITH 
+
+YOU CAN ALSO REPLENISH YOUR HEALTH
+AND STAMINA WITH DRINKING BEER 
+BE CAREFUL WHEN ALCOHOL METER GOES
+FULL YOU LOSE CONSCIOUSNESS!
+"
+
+[node name="Label2" type="Label" parent="toutorialpanel"]
+offset_left = 72.0
+offset_top = 80.0
+offset_right = 346.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(0.603922, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+text = "TO WIN YOU HAVE TO DEFEAT JYRKI
+IN SAUN STANDOFF."
+
+[node name="control" type="Label" parent="toutorialpanel"]
+offset_left = 312.0
+offset_top = 136.0
+offset_right = 371.0
+offset_bottom = 162.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "(SPACE)"
+
+[node name="control2" type="Label" parent="toutorialpanel"]
+offset_left = 310.0
+offset_top = 188.0
+offset_right = 369.0
+offset_bottom = 214.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "(R)"
+
+[node name="control3" type="Label" parent="toutorialpanel"]
+offset_left = 315.0
+offset_top = 264.0
+offset_right = 374.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "(E)"
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="toutorial" to="." method="_on_toutorial_pressed"]
