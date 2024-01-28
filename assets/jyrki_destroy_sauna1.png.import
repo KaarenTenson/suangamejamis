@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4kp50ipr6oyj"
-path="res://.godot/imported/jyrki_destroy_sauna2.png-3ffaa1767e793d8925e800ac3f5a9054.ctex"
+uid="uid://cf4xdc2j8g31f"
+path="res://.godot/imported/jyrki_destroy_sauna1.png-00592198dfac2dc7c060d227c4e6cfdf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/saunadate/jyrki_destroy_sauna2.png"
-dest_files=["res://.godot/imported/jyrki_destroy_sauna2.png-3ffaa1767e793d8925e800ac3f5a9054.ctex"]
+source_file="res://assets/jyrki_destroy_sauna1.png"
+dest_files=["res://.godot/imported/jyrki_destroy_sauna1.png-00592198dfac2dc7c060d227c4e6cfdf.ctex"]
 
 [params]
 

@@ -11,6 +11,7 @@ func _input(event: InputEvent):
 
 func badend():
 	get_tree().quit()
-
+func animatsioon():
+	get_tree().change_scene_to_file("res://assets/animations/sauna_hekki.tscn")
 func _on_ready():
 	pass
