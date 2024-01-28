@@ -63,6 +63,6 @@ label_settings = SubResource("LabelSettings_vxtjb")
 horizontal_alignment = 1
 
 [node name="jyrki" type="Sprite2D" parent="."]
-position = Vector2(1248, 670)
+position = Vector2(1228, 669)
 rotation = -0.522129
 texture = ExtResource("3_kdfb8")
