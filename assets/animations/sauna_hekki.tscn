@@ -188,3 +188,5 @@ sprite_frames = SubResource("SpriteFrames_unevh")
 animation = &"new_animation_2"
 frame = 1
 script = ExtResource("17_hfpmo")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
