@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d35kvwp7rcsg1"
+path="res://.godot/imported/OST - saunadate (loopable).mp3-ae2a6b6536686c7b1b48d105de3846f7.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/OST - saunadate (loopable).mp3"
+dest_files=["res://.godot/imported/OST - saunadate (loopable).mp3-ae2a6b6536686c7b1b48d105de3846f7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

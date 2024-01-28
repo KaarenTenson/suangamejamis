@@ -1,4 +1,5 @@
 [background arg="res://assets/saunadate/sauna_dating_background.png" fade="0.0"]
+[music path="res://assets/SFX/OST - saunadate (loopable).mp3" fade="0.0" volume="0.0"]
 join jyrki (JyrkiNeutral) 4
 [sound path="res://assets/SFX/DATING_Jyrki_goodsaunaboy.mp3" volume="0.0"]
 jyrki (JyrkiNeutral): Good sauna boy! How do you like my sauna?
@@ -7,13 +8,13 @@ jyrki (JyrkiNeutral): Good sauna boy! How do you like my sauna?
 	[sound path="res://assets/SFX/DATING_Jyrki_flattered.mp3" volume="0.0"]
 	jyrki (JyrkiFlirty): *blushes* I am glad you think so.
 	jyrki (JyrkiFlirty): I like sauna with you too. \:)
-	do SaunaDating.afplus20()
+	set {affection} += 20
 - This was the best sauna experience!
 	update jyrki (JyrkiHappy)
 	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 	jyrki (JyrkiHappy): Yes, my sauna is best Finnish design.
 	jyrki (JyrkiHappy): You can always sauna with me friend.
-	do SaunaDating.afplus10()
+	set {affection} += 10
 - I’ve definitely been in better saunas.
 	update jyrki (JyrkiAngry)
 	[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
@@ -21,7 +22,7 @@ jyrki (JyrkiNeutral): Good sauna boy! How do you like my sauna?
 	jyrki (JyrkiAngry): Finnish sauna is BEST sauna in the world!
 	[sound path="res://assets/SFX/DATING_Jyrki_tyhmavirolainen.mp3" volume="0.0"]
 	jyrki (JyrkiAngry): Tyhma, tyhma virolainen.
-	do SaunaDating.afminus20()
+	set {affection} -= 20
 jyrki (JyrkiNeutral): ...
 - How is it like living in Ailionjärvi?
 	[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
@@ -33,21 +34,22 @@ jyrki (JyrkiNeutral): ...
 	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 	jyrki (JyrkiHappy): Yes, it is one thing I look forward to during long week.
 	jyrki (JyrkiHappy): I am happy I get to share sauna with someone.
-	do SaunaDating.afplus10()
 	- It really does get hotter with more people in the sauna. *winky face*
+		set {affection} += 10
 		[sound path="res://assets/SFX/DATING_Jyrki_flattered.mp3" volume="0.0"]
 		jyrki (JyrkiFlirty): *blushes* Ho-ho-ho, that is right.
-	do SaunaDating.afplus20()
-	- es, it is very fun.
+	- Yes, it is very fun.
+		set {affection} += 20
 		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 		jyrki (JyrkiHappy): I am glad you think so friend.
-		do SaunaDating.afplus10()
+		set {affection} += 10
 - What do you do for work?
-	jyrki (JyrkiNeutral): I work with papers a lot.
 	[sound path="res://assets/SFX/DATING_Jyrki_neutral.mp3" volume="0.0"]
+	jyrki (JyrkiNeutral): I work with papers a lot.
 	jyrki (JyrkiNeutral): Contracts, mostly for people relocation.
-	jyrki (JyrkiNeutral): It requires a degree in administration and a lot of knowledge about immigration policies
+	jyrki (JyrkiNeutral): It requires a degree in administration and a lot of knowledge about immigration policies.
 	jyrki (JyrkiNeutral): The primary purpose of administrative procedure is to protect the rights of individuals against unlawful actions performed in the course of the exercise of executive authority.
+	[sound path="res://assets/SFX/DATING_Jyrki_neutral.mp3" volume="0.0"]
 	jyrki (JyrkiNeutral): An administrative matter (hereinafter, also ‘the matter’) must be dealt with justly, fairly, within reasonable time and with the least possible cost.
 	jyrki (JyrkiNeutral): Of course all proceedings before these administrative matters are public unless the law provides otherwise.
 	[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
@@ -57,47 +59,46 @@ jyrki (JyrkiNeutral): ...
 	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 	jyrki (JyrkiHappy): Of course friend! My sauna is always open on sauna day.
 	jyrki (JyrkiHappy): If you come, then invite friends too.
-	do SaunaDating.afplus10()
 	- Of course!!
+		set {affection} += 10
 		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 		jyrki (JyrkiHappy): *Jyrki looks at you with content eyes*
-		do SaunaDating.afplus10()
+		set {affection} += 10
 	- I’ll consider it.
 		[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
 		jyrki (JyrkiSad): sad Ok.. That is okay too.
-		do SaunaDating.afminus10()
+		set {affection} -= 10
 - You look cute, Jyrki.
 	[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 	jyrki (JyrkiFlirty): Ohh.. Kiitos my Estonian friend. \:)
-	do SaunaDating.afplus20()
+	set {affection} += 20
 	jyrki (JyrkiFlirty): What is your favorite type of Finnish man?
 	- The ones that like sauna.
 		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 		jyrki (JyrkiFlirty): happy Oh.. Very good.
-		do SaunaDating.afplus10()
+		set {affection} += 10
 	- The ones with blonde hair.
 		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 		jyrki (JyrkiFlirty): blushes Hi-hi. You flatter me, virolainen.
-		do SaunaDating.afplus20()
+		set {affection} += 20
 	- The ones who are not addicted to alcohol.
 		[sound path="res://assets/SFX/DATING_Jyrki_sad.mp3" volume="0.0"]
 		jyrki (JyrkiSad): Oh.. Ok. That is reasonable taste.
-		do SaunaDating.afminus10()
+		set {affection} -= 10
 - Do you work out, Jyrki?
 	[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
 	jyrki (JyrkiAngry): You don’t see I do bicep curls and bicycle crunches??
 	jyrki (JyrkiAngry): Do I really look that out of shape?!
 	- Yeah, you should work out more.
-		do SaunaDating.afminus20()
+		set {affection} -= 20
 		[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
 		jyrki: Typera virolainen, you do not see Finnish figure?
 		jyrki (JyrkiAngry): You are pathetic. I hope this is last time we see.
-		do SaunaDating.afminus20()
+		set {affection} -= 20
 	- Sorry, I didn’t mean it like that. You look great Jyrki! :)
 		[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 		jyrki (JyrkiHappy): Oh, OK. Sorry for getting wrong idea.
 		jyrki (JyrkiHappy): You look great too.
-		do SaunaDating.afplus10()
 		- Thank you Jyrki.
 			[sound path="res://assets/SFX/DATING_Jyrki_flattered.mp3" volume="0.0"]
 			jyrki (JyrkiFlirty): *looks at you, blushes and starts fidgeting*
@@ -105,18 +106,21 @@ jyrki (JyrkiNeutral): ...
 			[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 			jyrki (JyrkiHappy): I mean it. >o<
 			jyrki (JyrkiNeutral): Sorry, let us move on.
-if {Affection_meter} < {Affection_meter}:
+if {affection} < {minus30}:
+	[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
 	jyrki (JyrkiNeutral): Ok.. It was fun talk.
 	jyrki (JyrkiNeutral): Get out of my sauna now please.
-	setting reset 
+	do SaunaDating.badend()
+[music fade="0.0" volume="0.0"]
 [sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
 jyrki (JyrkiNeutral): Enough games… Now to determine if you are worthy of my sauna.
-jyrki (JyrkiNeutral): What is your favorite sauna beer?
+jyrki (JyrkiNeutral): Answer me this - what is your favorite sauna beer?
 - Saku Original
 - A.Le Coq Premium
 - Tanker
-jyrki (JyrkiAngry): Perkele you little stupid Estonian.
-[sound path="DATING_Jyrki_angry.mp3" volume="0.0"]
+[sound path="res://assets/SFX/DATING_Jyrki_angry.mp3" volume="0.0"]
+jyrki (JyrkiAngry): Perkele you little stupid Estonian...
 jyrki (JyrkiAngry): The only right sauna beer is Lapin Kulta.
-jyrki (JyrkiDestroy1): You have unleashed my rage tyhma virolainen!!
 [sound path="res://assets/SFX/DATING_Jyrki_perkele.mp3" volume="0.0"]
+jyrki (JyrkiDestroy1): You have unleashed my rage tyhma virolainen!!
+[wait time="5.0"]
