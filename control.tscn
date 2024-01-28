@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://drflakitg22ba"]
+[gd_scene load_steps=18 format=3 uid="uid://drflakitg22ba"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_8kgaw"]
 [ext_resource type="Texture2D" uid="uid://dwx5phiib25o6" path="res://craftpix-net-882062-free-winter-backgrounds-pixel-art/winter 8/hd.png" id="1_rd42q"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bn372dxivhhuq" path="res://cancel.svg" id="6_lr4fe"]
 [ext_resource type="Texture2D" uid="uid://k6mu061ntby2" path="res://toutorial.png" id="8_c03tl"]
 [ext_resource type="FontFile" uid="uid://bo73n1slaruag" path="res://woodys/Woodys.ttf" id="10_6htmo"]
+[ext_resource type="AudioStream" uid="uid://cy3lke5kc376g" path="res://assets/SFX/UI_select.mp3" id="11_oqsmx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_egyg5"]
 bg_color = Color(0.745098, 0.552941, 0.435294, 1)
@@ -17,6 +18,16 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nvyv3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fm2jf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3kptt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_duvfd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5unka"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -44,12 +55,14 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -79.0
-offset_top = 264.0
-offset_right = 73.0
+offset_left = -95.0
+offset_top = 248.0
+offset_right = 89.0
 offset_bottom = 318.0
 grow_horizontal = 2
+theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_egyg5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nvyv3")
 text = "Start"
 icon = ExtResource("3_ww6py")
 flat = true
@@ -64,13 +77,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -79.0
-offset_top = -8.5
-offset_right = 73.0
-offset_bottom = 45.5
+offset_left = -95.0
+offset_top = -16.5
+offset_right = 89.0
+offset_bottom = 53.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_egyg5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fm2jf")
 text = "tutorial"
 icon = ExtResource("3_ww6py")
 flat = true
@@ -85,13 +100,15 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -87.0
+offset_left = -95.0
 offset_top = -281.0
-offset_right = 85.0
-offset_bottom = -227.0
+offset_right = 89.0
+offset_bottom = -211.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_egyg5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3kptt")
 text = "Exit"
 icon = ExtResource("3_ww6py")
 flat = true
@@ -119,6 +136,7 @@ offset_top = 8.0
 offset_right = 56.0
 offset_bottom = 56.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_egyg5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_duvfd")
 icon = ExtResource("3_v3xqg")
 flat = true
 expand_icon = true
@@ -151,6 +169,7 @@ offset_left = 328.0
 offset_top = 16.0
 offset_right = 360.0
 offset_bottom = 48.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5unka")
 icon = ExtResource("6_lr4fe")
 flat = true
 expand_icon = true
@@ -218,6 +237,9 @@ theme_override_colors/font_color = Color(0.447059, 0.286275, 0.027451, 1)
 theme_override_fonts/font = ExtResource("10_6htmo")
 theme_override_font_sizes/font_size = 35
 text = "In a Sauna with Finnish Man Jyrki from Ailionjärvi"
+
+[node name="vajutus" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_oqsmx")
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="toutorial" to="." method="_on_toutorial_pressed"]

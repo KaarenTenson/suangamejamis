@@ -1,5 +1,6 @@
 extends Control
 @onready var toutorialpanel = $toutorialpanel
+@onready var vajutus = $vajutus
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,14 +17,17 @@ func _on_start_pressed():
 
 
 func _on_exit_pressed():
+	vajutus.play()
 	get_tree().quit()
 
 
 func _on_toutorial_pressed():
+	vajutus.play()
 	toutorialpanel.visible=true
 
 
 
 func _on_exittoutoutorial_pressed():
+	vajutus.play()
 	if toutorialpanel.visible==true:
 		toutorialpanel.visible=false

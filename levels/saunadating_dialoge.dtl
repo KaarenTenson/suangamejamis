@@ -123,4 +123,4 @@ jyrki (JyrkiAngry): Perkele you little stupid Estonian...
 jyrki (JyrkiAngry): The only right sauna beer is Lapin Kulta.
 [sound path="res://assets/SFX/DATING_Jyrki_perkele.mp3" volume="0.0"]
 jyrki (JyrkiDestroy1): You have unleashed my rage tyhma virolainen!!
-[wait time="5.0"]
+do SaunaDating
