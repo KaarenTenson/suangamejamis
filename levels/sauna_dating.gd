@@ -3,6 +3,7 @@ extends Node2D
 const affection = 0
 
 var af = affection
+var minus30 = -30
 
 func _input(event: InputEvent):
 	# check if a dialog is already running

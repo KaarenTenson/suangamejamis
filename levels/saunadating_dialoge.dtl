@@ -105,7 +105,7 @@ jyrki (JyrkiNeutral): ...
 			[sound path="res://assets/SFX/DATING_Jyrki_happy.mp3" volume="0.0"]
 			jyrki (JyrkiHappy): I mean it. >o<
 			jyrki (JyrkiNeutral): Sorry, let us move on.
-if {Affection_meter} < 0:
+if {Affection_meter} < {Affection_meter}:
 	jyrki (JyrkiNeutral): Ok.. It was fun talk.
 	jyrki (JyrkiNeutral): Get out of my sauna now please.
 	setting reset 
