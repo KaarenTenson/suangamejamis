@@ -6,7 +6,10 @@ extends Node2D
 
 @onready var olutta = $olutta
 @onready var olutta_sprite = $olutta_sprite
+@onready var vajutus = $vajutus
 
+func _ready():
+	vajutus.play()
 func _on_player_goodleil():
 	goodleil_sound.play()
 	goodleil_timer.start()
