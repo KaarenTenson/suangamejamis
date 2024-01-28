@@ -175,6 +175,7 @@ flat = true
 expand_icon = true
 
 [node name="Label" type="Label" parent="toutorialpanel"]
+layout_mode = 0
 offset_left = 48.0
 offset_top = 88.0
 offset_right = 382.0
@@ -193,6 +194,7 @@ FULL YOU LOSE CONSCIOUSNESS!
 "
 
 [node name="Label2" type="Label" parent="toutorialpanel"]
+layout_mode = 0
 offset_left = 72.0
 offset_top = 80.0
 offset_right = 346.0
@@ -203,6 +205,7 @@ text = "TO WIN YOU HAVE TO DEFEAT JYRKI
 IN SAUN STANDOFF."
 
 [node name="control" type="Label" parent="toutorialpanel"]
+layout_mode = 0
 offset_left = 312.0
 offset_top = 136.0
 offset_right = 371.0
@@ -211,6 +214,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "(SPACE)"
 
 [node name="control2" type="Label" parent="toutorialpanel"]
+layout_mode = 0
 offset_left = 310.0
 offset_top = 188.0
 offset_right = 369.0
@@ -219,6 +223,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "(R)"
 
 [node name="control3" type="Label" parent="toutorialpanel"]
+layout_mode = 0
 offset_left = 315.0
 offset_top = 264.0
 offset_right = 374.0

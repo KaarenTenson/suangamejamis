@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bkln5luhynb7r"]
+[gd_scene load_steps=19 format=3 uid="uid://bkln5luhynb7r"]
 
 [ext_resource type="Texture2D" uid="uid://cf4xdc2j8g31f" path="res://assets/jyrki_destroy_sauna1.png" id="1_gbfdx"]
 [ext_resource type="Texture2D" uid="uid://b4kp50ipr6oyj" path="res://assets/jyrki_destroy_sauna2.png" id="1_qxw74"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://cu3oxfnju06yu" path="res://assets/saunadate/welcome_to_hell12.png" id="13_wikxo"]
 [ext_resource type="Texture2D" uid="uid://c1r24drfg6o8y" path="res://assets/saunadate/welcome_to_hell13.png" id="14_yckp5"]
 [ext_resource type="Texture2D" uid="uid://c8p8gyh0qvwih" path="res://assets/saunadate/welcome_to_hell14.png" id="15_qbap1"]
+[ext_resource type="Script" path="res://assets/animations/sauna_hekki.gd" id="17_hfpmo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_unevh"]
 resource_local_to_scene = true
@@ -180,53 +181,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_lyhlm"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"update": 1,
-"values": []
-}
-
-[sub_resource type="Animation" id="Animation_887h7"]
-resource_name = "tuli"
-length = 25.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(-0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_j7db2"]
-_data = {
-"RESET": SubResource("Animation_lyhlm"),
-"tuli": SubResource("Animation_887h7")
-}
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D"]
 position = Vector2(640, 378)
 scale = Vector2(0.444444, 0.474359)
 sprite_frames = SubResource("SpriteFrames_unevh")
 animation = &"new_animation_2"
-frame = 23
-frame_progress = 1.0
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_j7db2")
-}
+frame = 1
+script = ExtResource("17_hfpmo")
