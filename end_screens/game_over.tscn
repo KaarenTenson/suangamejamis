@@ -32,7 +32,7 @@ offset_bottom = 562.0
 text = "This was your last sauna.
 
 Press R to restart
-Press Space to continue"
+Press Space to go to menu"
 label_settings = SubResource("LabelSettings_x5nqo")
 horizontal_alignment = 1
 
